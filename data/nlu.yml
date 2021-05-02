@@ -1,0 +1,196 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect 
+    
+    
+- intent: res_table
+  examples: |
+    - I want to reserve a table
+    - Make reservations
+    - Reservation
+    - Kindly make reservations
+    - I wanna make reservation
+    - Reserve a table
+    - Reserve table
+    
+- intent: no_of_seats
+  examples: |
+    - [1] (numberofseats) seat
+    - [2] (numberofseats) seats
+    - [3] (numberofseats) seats
+    - [4] (numberofseats) seats
+    - [5] (numberofseats) seats
+    - [6] (numberofseats) seats
+    - [7] (numberofseats) seats
+    - [8] (numberofseats) seats
+    - [9] (numberofseats) seats
+    - [10] (numberofseats) seats
+    - [11] (numberofseats) seats
+    - [12] (numberofseats) seats
+    - [1] (numberofseats)
+    - [2] (numberofseats)
+    - [3] (numberofseats)
+    - [4] (numberofseats)
+    - [5] (numberofseats)
+    - [6] (numberofseats)
+    - [7] (numberofseats) 
+    - [8] (numberofseats) 
+    - [9] (numberofseats)
+    - [10] (numberofseats)
+    - [11] (numberofseats)
+    - [12] (numberofseats)
+    - I would like to book [1] (numberofseats) seats
+    - I would like to book [2] (numberofseats) seats
+    - I would like to book [3] (numberofseats) seats
+    - I would like to book [4] (numberofseats) seats
+    - I would like to book [5] (numberofseats) seats
+    - I would like to book [6] (numberofseats) seats
+    - I would like to book [7] (numberofseats) seats
+    - I would like to book [8] (numberofseats) seats
+    - I would like to book [9] (numberofseats) seats
+    - I would like to book [10] (numberofseats) seats
+    - I would like to book [11] (numberofseats) seats
+    - I would like to book [12] (numberofseats) seats
+
+- intent: dailytime
+  examples: |
+    - What are your timings?
+    - Timmings?
+    - Restraunt Timmings?     
+    
+- intent: ac
+  examples: |
+    - [ac] (acnonac)
+    - [ac] (acnonac) please
+    - [ac] (acnonac) ,please
+    - [ac] (acnonac) , please
+    - I would like to have the one with [ac](acnonac) 
+    - [non-ac] (acnonac)  please
+    - [non-ac] (acnonac) ,please
+    - [non-ac] (acnonac)  , please
+    - I would like to have the one with [non-ac] (acnonac) 
+    
+- intent: res_timming
+  examples: |
+    - [7 pm] (time)
+    - [7:00 pm] (time)
+    - [7:10 pm] (time)
+    - [7:15 pm] (time)
+    - [7:20 pm] (time)
+    - [7:30 pm] (time)
+    - [7:35 pm] (time)
+    - [7:40 pm] (time)
+    - [7:45 pm] (time)
+    - [7:50 pm] (time)
+    - [7:55 pm] (time)
+    - [8 pm] (time)
+    - [8:00 pm] (time)
+    - [8:10 pm] (time)
+    - [8:15 pm] (time)
+    - [8:20 pm] (time)
+    - [8:30 pm] (time)
+    - [8:35 pm] (time)
+    - [8:40 pm] (time)
+    - [8:45 pm] (time)
+    - [8:50 pm] (time)
+    - [8:55 pm] (time)
+    - [9 pm] (time)
+    - [9:00 pm] (time)
+    - [9:10 pm] (time)
+    - [9:15 pm] (time)
+    - [9:20 pm] (time)
+    - [9:30 pm] (time)
+   
+    
+
+ 
+   
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

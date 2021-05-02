@@ -1,0 +1,69 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - res_table
+  - no_of_seats
+  - ac
+  - res_timming
+  - dailytime
+  
+actions:
+  - seats_table 
+  - ac_non_ac
+  - ac_time
+  - timming
+  - daily_time
+  
+slots:
+ numberofseats:
+    type: text
+ acnonac:
+    type: text
+ time: 
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  seats_table:
+  - text: "How many seats would you like to reserve?"  
+  
+  timming:
+  - text: "You have reserved {numberofseats} in our {acnonac} section for {time} slot"
+  
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  daily_time:
+  - text: "We are only open from 7pm to 10pm"
+  
+  ac_time:
+  - text: "When would you like to book a reservation? (We are only open from 7pm to 10pm)"
+  
+  ac_non_ac:
+  - text: "Which section would you like to book  AC or Non-AC "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
